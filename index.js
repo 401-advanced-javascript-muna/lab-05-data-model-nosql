@@ -18,7 +18,7 @@ const MONGOOSE_URI = 'mongodb://localhost:27017/cat-pro-db';
 
 // mongoose.connect(MONGOOSE_URI, mongooseOptions);
 
-mongoose.connect(MONGOOSE_URI, { useNewUrlParser: true, });
+mongoose.connect(MONGOOSE_URI, { useNewUrlParser: true });
 
 // const clothes = new Categories({ name: 'clothes', description: 'desssssssss2222s'});
 
@@ -32,6 +32,6 @@ let clothes = new Categories;
 
 let dress = new Products;
 
-clothes.create({ name: 'clot', description: 'des',});
+clothes.create({ name: 'clot', description: 'des'});
 
-dress.create({ name: 'dress11',price:'4',weight:'4',quantityInStock: '100',});
+dress.create({ name: 'dress11',price:'4',weight:'4',quantityInStock: '100'});

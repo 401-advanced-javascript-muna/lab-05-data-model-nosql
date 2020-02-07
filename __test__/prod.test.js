@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-'use strict';
+
 
 require('@code-fellows/supergoose');
 
@@ -12,7 +12,7 @@ describe(' Categories Testing ', () => {
 
   it(' can get() any product ', () => {
 
-    let rec = {name:'name1' , price: 'price1', weight: 'weight1', quantityInStock: 'quantityInStock1',};
+    let rec = {name:'name1' , price: 'price1', weight: 'weight1', quantityInStock: 'quantityInStock1'};
 
     return product.create(rec)
       .then(record => {
@@ -28,7 +28,7 @@ describe(' Categories Testing ', () => {
 
 
   it(' can create() A new product ', () => {
-    let newrecord = {name:'name1' , price: 'price1', weight: 'weight1', quantityInStock: 'quantityInStock1',};
+    let newrecord = {name:'name1' , price: 'price1', weight: 'weight1', quantityInStock: 'quantityInStock1'};
     return product.create(newrecord)
       .then(record => {
         Object.keys(newrecord).forEach(key => {
@@ -39,8 +39,8 @@ describe(' Categories Testing ', () => {
   });
 
   it(' can update() A product ', () => {
-    let oldRecord = {name:'name1' , price: 'price1', weight: 'weight1', quantityInStock: 'quantityInStock1',};
-    let newRecord = {name:'name2' , price: 'price2', weight: 'weight2', quantityInStock: 'quantityInStock2',};
+    let oldRecord = {name:'name1' , price: 'price1', weight: 'weight1', quantityInStock: 'quantityInStock1'};
+    let newRecord = {name:'name2' , price: 'price2', weight: 'weight2', quantityInStock: 'quantityInStock2'};
 
     return product.create(oldRecord)
       .then(record => {
@@ -55,7 +55,7 @@ describe(' Categories Testing ', () => {
   });
 
   it(' can Delete() A product ', () => {
-    let oldRecord = {name:'name1' , price: 'price1', weight: 'weight1', quantityInStock: 'quantityInStock1',};
+    let oldRecord = {name:'name1' , price: 'price1', weight: 'weight1', quantityInStock: 'quantityInStock1'};
     return product.create(oldRecord)
       .then(record => {
         return product.delete(record._id, record)

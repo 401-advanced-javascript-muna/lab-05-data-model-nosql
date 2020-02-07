@@ -12,7 +12,7 @@ describe(' Categories Testing ', () => {
 
 
   it(' get()  category ', () => {
-    let newRec = { name:'test name', description:'test description',};
+    let newRec = { name:'test name', description:'test description'};
 
 
     return category.create(newRec)
@@ -30,7 +30,7 @@ describe(' Categories Testing ', () => {
 
   it(' create() a new category ', () => {
 
-    let cat = { name:'test name', description:'test description',};
+    let cat = { name:'test name', description:'test description'};
 
 
     return category.create(cat)
@@ -45,7 +45,7 @@ describe(' Categories Testing ', () => {
 
 
   it(' Delete() A category ', () => {
-    let newRec = { name:'test name', description:'test description',};
+    let newRec = { name:'test name', description:'test description'};
 
     return category.create(newRec)
       .then(record => {
@@ -61,7 +61,7 @@ describe(' Categories Testing ', () => {
   it(' update() a category ', () => {
 
 
-    let newRec =  { name: 'test name updated', description: 'test description updated', };
+    let newRec =  { name: 'test name updated', description: 'test description updated' };
     return category.create(newRec)
       .then(record => {
         return category.update(record._id, record)
